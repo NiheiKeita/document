@@ -1,0 +1,187 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="Jira Agile Workflow" id="agile-workflow">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Jiraを使ったアジャイル開発ワークフロー" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="350" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Product Backlog -->
+        <mxCell id="product-backlog" value="プロダクトバックログ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- PO Role -->
+        <mxCell id="po-role" value="PO: エピック・ストーリー作成&#xa;優先度設定&#xa;バックログ管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Sprint Planning -->
+        <mxCell id="sprint-planning" value="スプリントプランニング" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Team Role -->
+        <mxCell id="team-role" value="開発チーム: ストーリー選択&#xa;タスク分解&#xa;技術的評価" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Sprint Backlog -->
+        <mxCell id="sprint-backlog" value="スプリントバックログ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="80" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Sprint Execution -->
+        <mxCell id="sprint-execution" value="スプリント実行" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="80" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Daily Scrum -->
+        <mxCell id="daily-scrum" value="デイリースクラム&#xa;進捗確認&#xa;ブロッカー管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="740" y="160" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Sprint Review -->
+        <mxCell id="sprint-review" value="スプリントレビュー" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="80" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Retrospective -->
+        <mxCell id="retrospective" value="レトロスペクティブ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="160" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrows -->
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="product-backlog" target="sprint-planning">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="110" as="sourcePoint" />
+            <mxPoint x="270" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="sprint-planning" target="sprint-backlog">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="110" as="sourcePoint" />
+            <mxPoint x="500" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="sprint-backlog" target="sprint-execution">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="110" as="sourcePoint" />
+            <mxPoint x="730" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="sprint-execution" target="sprint-review">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="110" as="sourcePoint" />
+            <mxPoint x="960" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Jira Tools -->
+        <mxCell id="jira-tools" value="Jiraツール" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="1070" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Jira Features -->
+        <mxCell id="backlog-view" value="バックログビュー&#xa;優先度管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sprint-board" value="スプリントボード&#xa;カンバン表示" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="burndown" value="バーンダウン&#xa;チャート" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reports" value="スプリント&#xa;レポート" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="automation" value="自動化&#xa;ルール" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="650" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notifications" value="通知&#xa;設定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="800" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="filters" value="フィルター&#xa;検索" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="950" y="340" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Role Legend -->
+        <mxCell id="role-legend" value="役割分担" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="po-legend" value="PO (プロダクトオーナー)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="460" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="team-legend" value="開発チーム" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="220" y="460" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sm-legend" value="SM (スクラムマスター)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="460" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Process Details -->
+        <mxCell id="process-details" value="プロセス詳細" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="520" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="backlog-refinement" value="バックログリファインメント&#xa;• PO主催、SMファシリテート&#xa;• ストーリー詳細化&#xa;• 見積もり実施" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="560" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sprint-planning-detail" value="スプリントプランニング&#xa;• POと開発チームでストーリー選択&#xa;• 技術的評価&#xa;• タスク分解" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="560" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="daily-scrum-detail" value="デイリースクラム&#xa;• 開発チーム主催&#xa;• ボードでの進捗確認&#xa;• ブロッカー共有" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="510" y="560" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="review-retro-detail" value="レビュー・レトロ&#xa;• 完了ストーリーのデモ&#xa;• プロセス改善&#xa;• 次スプリント準備" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="740" y="560" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Jira Integration -->
+        <mxCell id="jira-integration" value="Jira連携ポイント" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="680" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="issue-types" value="Issue Types&#xa;• Epic&#xa;• Story&#xa;• Task&#xa;• Sub-task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="workflow" value="Workflow&#xa;• To Do&#xa;• In Progress&#xa;• Review&#xa;• Done" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fields" value="Fields&#xa;• Story Points&#xa;• Sprint&#xa;• Epic Link&#xa;• Priority" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="automation-rules" value="自動化ルール&#xa;• ステータス変更通知&#xa;• スプリント終了アーカイブ&#xa;• ブロッカー検出アラート" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="500" y="720" width="150" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reports-detail" value="レポート&#xa;• バーンダウンチャート&#xa;• スプリントレポート&#xa;• 速度チャート&#xa;• ブロッカーレポート" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="720" width="150" height="80" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile> 
