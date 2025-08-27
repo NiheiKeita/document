@@ -1,107 +1,710 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2024-08-27T00:00:00.000Z" agent="5.0" version="21.6.5" etag="JWT_SEQUENCE" type="device">
-  <diagram name="JWT Authentication" id="jwt-auth">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-        <mxCell id="2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="40" width="30" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="3" value="React App" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="40" width="80" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="4" value="Auth Server" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="280" y="40" width="80" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="5" value="API Server" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="410" y="40" width="80" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="6" value="" style="endArrow=none;dashed=1;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="55" y="120" as="sourcePoint"/>
-            <mxPoint x="55" y="500" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7" value="" style="endArrow=none;dashed=1;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="120" as="sourcePoint"/>
-            <mxPoint x="190" y="500" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8" value="" style="endArrow=none;dashed=1;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="120" as="sourcePoint"/>
-            <mxPoint x="320" y="500" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="9" value="" style="endArrow=none;dashed=1;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="450" y="120" as="sourcePoint"/>
-            <mxPoint x="450" y="500" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="10" value="Login" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="60" y="150" as="sourcePoint"/>
-            <mxPoint x="185" y="150" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="11" value="POST /auth/login" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="195" y="170" as="sourcePoint"/>
-            <mxPoint x="315" y="170" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="12" value="JWT Token" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="315" y="190" as="sourcePoint"/>
-            <mxPoint x="195" y="190" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="13" value="API Call" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="195" y="230" as="sourcePoint"/>
-            <mxPoint x="445" y="230" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="14" value="Response" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="445" y="250" as="sourcePoint"/>
-            <mxPoint x="195" y="250" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="15" value="Token Expired" style="endArrow=classic;html=1;strokeColor=#ff6b6b;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="195" y="300" as="sourcePoint"/>
-            <mxPoint x="445" y="300" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="16" value="401 Error" style="endArrow=classic;html=1;strokeColor=#ff6b6b;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="445" y="320" as="sourcePoint"/>
-            <mxPoint x="195" y="320" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="17" value="Refresh Token" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="195" y="350" as="sourcePoint"/>
-            <mxPoint x="315" y="350" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="18" value="New JWT" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="315" y="370" as="sourcePoint"/>
-            <mxPoint x="195" y="370" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="19" value="Retry API" style="endArrow=classic;html=1;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="195" y="400" as="sourcePoint"/>
-            <mxPoint x="445" y="400" as="targetPoint"/>
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="app.diagrams.net" modified="2024-08-27T00:00:00.000Z" agent="Claude" version="1.0" type="device">
+<diagram name="1. Initial Login - HMAC">
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+<mxCell id="title1" value="初回ログイン - 共通鍵方式 (HMAC)" style="text;html=1;strokeColor=none;fillColor=#e1f5fe;align=center;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="200" y="20" width="600" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="user1" value="👤 User" style="shape=umlActor;verticalLabelPosition=bottom;" vertex="1" parent="1">
+<mxGeometry x="50" y="70" width="30" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="react1" value="📱 React App" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="150" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="auth1" value="🖥️ Auth Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="320" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="api1" value="🌐 API Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="490" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="key1" value="🔑 HMAC Key" style="rounded=1;whiteSpace=wrap;fillColor=#ffcccc;" vertex="1" parent="1">
+<mxGeometry x="660" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="userLine1" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="65" y="150" as="sourcePoint"/>
+<mxPoint x="65" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="reactLine1" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="200" y="150" as="sourcePoint"/>
+<mxPoint x="200" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authLine1" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="370" y="150" as="sourcePoint"/>
+<mxPoint x="370" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="apiLine1" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="540" y="150" as="sourcePoint"/>
+<mxPoint x="540" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="keyLine1" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="710" y="150" as="sourcePoint"/>
+<mxPoint x="710" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="login1" value="1. ログイン情報入力" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="70" y="180" as="sourcePoint"/>
+<mxPoint x="195" y="180" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="auth2" value="2. POST /api/auth/login" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="210" as="sourcePoint"/>
+<mxPoint x="365" y="210" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="getKey1" value="3. 秘密鍵取得" style="endArrow=classic;strokeColor=#ff6666;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="375" y="240" as="sourcePoint"/>
+<mxPoint x="705" y="240" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="returnKey1" value="4. HMAC Key 返却" style="endArrow=classic;strokeColor=#ff6666;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="705" y="270" as="sourcePoint"/>
+<mxPoint x="375" y="270" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authProcess1" value="ユーザー認証処理" style="rounded=1;whiteSpace=wrap;fillColor=#fff3e0;" vertex="1" parent="1">
+<mxGeometry x="320" y="290" width="100" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="sign1" value="5. JWT署名生成\n(HMAC-SHA256)" style="rounded=1;whiteSpace=wrap;fillColor=#fff3e0;" vertex="1" parent="1">
+<mxGeometry x="320" y="330" width="100" height="50" as="geometry"/>
+</mxCell>
+
+<mxCell id="token1" value="6. JWT Token 返却" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="365" y="400" as="sourcePoint"/>
+<mxPoint x="205" y="400" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="storeToken1" value="トークン保存" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e8;" vertex="1" parent="1">
+<mxGeometry x="150" y="420" width="100" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="apiReq1" value="7. API呼び出し\n(Bearer Token)" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="470" as="sourcePoint"/>
+<mxPoint x="535" y="470" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="verifyKey1" value="8. 同じ秘密鍵取得" style="endArrow=classic;strokeColor=#ff6666;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="545" y="500" as="sourcePoint"/>
+<mxPoint x="705" y="500" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="returnKey2" value="9. HMAC Key 返却" style="endArrow=classic;strokeColor=#ff6666;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="705" y="530" as="sourcePoint"/>
+<mxPoint x="545" y="530" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="verify1" value="10. JWT署名検証\n(HMAC-SHA256)" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e8;" vertex="1" parent="1">
+<mxGeometry x="490" y="540" width="100" height="50" as="geometry"/>
+</mxCell>
+
+<mxCell id="success1" value="11. 200 OK\nデータ返却" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="535" y="610" as="sourcePoint"/>
+<mxPoint x="205" y="610" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="display1" value="12. データ表示" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="195" y="640" as="sourcePoint"/>
+<mxPoint x="70" y="640" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+</root>
+</mxGraphModel>
+</diagram>
+
+<diagram name="2. Initial Login - RSA">
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+<mxCell id="title2" value="初回ログイン - 公開鍵方式 (RSA)" style="text;html=1;strokeColor=none;fillColor=#e1f5fe;align=center;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="200" y="20" width="600" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="user2" value="👤 User" style="shape=umlActor;verticalLabelPosition=bottom;" vertex="1" parent="1">
+<mxGeometry x="50" y="70" width="30" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="react2" value="📱 React App" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="150" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="auth2" value="🖥️ Auth Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="300" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="api2" value="🌐 API Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="450" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="jwks2" value="🔐 JWKS\nEndpoint" style="rounded=1;whiteSpace=wrap;fillColor=#ccffcc;" vertex="1" parent="1">
+<mxGeometry x="600" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="privKey2" value="🔑 Private Key" style="rounded=1;whiteSpace=wrap;fillColor=#ffcccc;" vertex="1" parent="1">
+<mxGeometry x="750" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="userLine2" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="65" y="150" as="sourcePoint"/>
+<mxPoint x="65" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="reactLine2" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="200" y="150" as="sourcePoint"/>
+<mxPoint x="200" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authLine2" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="350" y="150" as="sourcePoint"/>
+<mxPoint x="350" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="apiLine2" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="500" y="150" as="sourcePoint"/>
+<mxPoint x="500" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="jwksLine2" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="650" y="150" as="sourcePoint"/>
+<mxPoint x="650" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="privLine2" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="800" y="150" as="sourcePoint"/>
+<mxPoint x="800" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="login2" value="1. ログイン情報入力" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="70" y="180" as="sourcePoint"/>
+<mxPoint x="195" y="180" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authReq2" value="2. POST /api/auth/login" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="210" as="sourcePoint"/>
+<mxPoint x="345" y="210" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="getPriv2" value="3. 秘密鍵取得" style="endArrow=classic;strokeColor=#ff6666;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="355" y="240" as="sourcePoint"/>
+<mxPoint x="795" y="240" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="returnPriv2" value="4. RSA Private Key" style="endArrow=classic;strokeColor=#ff6666;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="795" y="270" as="sourcePoint"/>
+<mxPoint x="355" y="270" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authProcess2" value="ユーザー認証処理" style="rounded=1;whiteSpace=wrap;fillColor=#fff3e0;" vertex="1" parent="1">
+<mxGeometry x="300" y="290" width="100" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="sign2" value="5. JWT署名生成\n(RSA-SHA256)" style="rounded=1;whiteSpace=wrap;fillColor=#fff3e0;" vertex="1" parent="1">
+<mxGeometry x="300" y="330" width="100" height="50" as="geometry"/>
+</mxCell>
+
+<mxCell id="publishKey2" value="6. 公開鍵をJWKSに登録" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="355" y="400" as="sourcePoint"/>
+<mxPoint x="645" y="400" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="token2" value="7. JWT Token 返却" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="345" y="430" as="sourcePoint"/>
+<mxPoint x="205" y="430" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="storeToken2" value="トークン保存" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e8;" vertex="1" parent="1">
+<mxGeometry x="150" y="450" width="100" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="apiReq2" value="8. API呼び出し\n(Bearer Token)" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="500" as="sourcePoint"/>
+<mxPoint x="495" y="500" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="getPub2" value="9. 公開鍵取得" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="505" y="530" as="sourcePoint"/>
+<mxPoint x="645" y="530" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="returnPub2" value="10. RSA Public Key" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="645" y="560" as="sourcePoint"/>
+<mxPoint x="505" y="560" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="verify2" value="11. JWT署名検証\n(RSA Public Key)" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e8;" vertex="1" parent="1">
+<mxGeometry x="450" y="580" width="100" height="50" as="geometry"/>
+</mxCell>
+
+<mxCell id="success2" value="12. 200 OK\nデータ返却" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="495" y="650" as="sourcePoint"/>
+<mxPoint x="205" y="650" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="display2" value="13. データ表示" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="195" y="680" as="sourcePoint"/>
+<mxPoint x="70" y="680" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+</root>
+</mxGraphModel>
+</diagram>
+
+<diagram name="3. Valid Token">
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+<mxCell id="title3" value="APIトークン有効時 - 正常フロー" style="text;html=1;strokeColor=none;fillColor=#c8e6c9;align=center;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="300" y="20" width="400" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="user3" value="👤 User" style="shape=umlActor;verticalLabelPosition=bottom;" vertex="1" parent="1">
+<mxGeometry x="80" y="70" width="30" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="react3" value="📱 React App" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="200" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="api3" value="🌐 API Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="380" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="cache3" value="🚀 JWT Cache" style="rounded=1;whiteSpace=wrap;fillColor=#bbdefb;" vertex="1" parent="1">
+<mxGeometry x="560" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="userLine3" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="95" y="150" as="sourcePoint"/>
+<mxPoint x="95" y="450" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="reactLine3" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="250" y="150" as="sourcePoint"/>
+<mxPoint x="250" y="450" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="apiLine3" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="430" y="150" as="sourcePoint"/>
+<mxPoint x="430" y="450" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="cacheLine3" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="610" y="150" as="sourcePoint"/>
+<mxPoint x="610" y="450" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="request3" value="1. データ要求" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="100" y="180" as="sourcePoint"/>
+<mxPoint x="245" y="180" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="apiCall3" value="2. GET /api/data\n(有効JWT付き)" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="255" y="210" as="sourcePoint"/>
+<mxPoint x="425" y="210" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="cacheCheck3" value="3. キャッシュ確認" style="endArrow=classic;strokeColor=#1976d2;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="435" y="240" as="sourcePoint"/>
+<mxPoint x="605" y="240" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="cacheHit3" value="4. キャッシュヒット\n(検証済みトークン)" style="endArrow=classic;strokeColor=#1976d2;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="605" y="270" as="sourcePoint"/>
+<mxPoint x="435" y="270" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="process3" value="リクエスト処理" style="rounded=1;whiteSpace=wrap;fillColor=#e8f5e8;" vertex="1" parent="1">
+<mxGeometry x="380" y="300" width="100" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="response3" value="5. 200 OK\nデータ返却" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="425" y="350" as="sourcePoint"/>
+<mxPoint x="255" y="350" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="display3" value="6. データ表示" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="245" y="380" as="sourcePoint"/>
+<mxPoint x="100" y="380" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+</root>
+</mxGraphModel>
+</diagram>
+
+<diagram name="4. Token Refresh">
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+<mxCell id="title4" value="API無効で新規発行時 - リフレッシュフロー" style="text;html=1;strokeColor=none;fillColor=#fff3e0;align=center;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="250" y="20" width="500" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="user4" value="👤 User" style="shape=umlActor;verticalLabelPosition=bottom;" vertex="1" parent="1">
+<mxGeometry x="50" y="70" width="30" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="react4" value="📱 React App" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="150" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="api4" value="🌐 API Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="300" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="auth4" value="🖥️ Auth Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="450" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="db4" value="🗄️ Token DB" style="rounded=1;whiteSpace=wrap;fillColor=#f8bbd9;" vertex="1" parent="1">
+<mxGeometry x="600" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="userLine4" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="65" y="150" as="sourcePoint"/>
+<mxPoint x="65" y="650" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="reactLine4" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="200" y="150" as="sourcePoint"/>
+<mxPoint x="200" y="650" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="apiLine4" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="350" y="150" as="sourcePoint"/>
+<mxPoint x="350" y="650" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authLine4" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="500" y="150" as="sourcePoint"/>
+<mxPoint x="500" y="650" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="dbLine4" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="650" y="150" as="sourcePoint"/>
+<mxPoint x="650" y="650" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="request4" value="1. データ要求" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="70" y="180" as="sourcePoint"/>
+<mxPoint x="195" y="180" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="expiredCall4" value="2. GET /api/data\n(期限切れJWT)" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="210" as="sourcePoint"/>
+<mxPoint x="345" y="210" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="error401" value="3. 401 Unauthorized\n(トークン期限切れ)" style="endArrow=classic;strokeColor=#d32f2f;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="345" y="250" as="sourcePoint"/>
+<mxPoint x="205" y="250" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="interceptor4" value="自動リフレッシュ\n(Axios Interceptor)" style="rounded=1;whiteSpace=wrap;fillColor=#ffeb3b;" vertex="1" parent="1">
+<mxGeometry x="150" y="280" width="100" height="40" as="geometry"/>
+</mxCell>
+
+<mxCell id="refresh4" value="4. POST /api/auth/refresh\n(Refresh Token)" style="endArrow=classic;strokeColor=#ff9800;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="340" as="sourcePoint"/>
+<mxPoint x="495" y="340" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="checkRefresh4" value="5. リフレッシュトークン検証" style="endArrow=classic;strokeColor=#ff9800;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="505" y="370" as="sourcePoint"/>
+<mxPoint x="645" y="370" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="validRefresh4" value="6. 有効トークン" style="endArrow=classic;strokeColor=#ff9800;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="645" y="400" as="sourcePoint"/>
+<mxPoint x="505" y="400" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="rotation4" value="7. Token Rotation\n(古いトークン無効化)" style="endArrow=classic;strokeColor=#ff9800;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="505" y="430" as="sourcePoint"/>
+<mxPoint x="645" y="430" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="newTokens4" value="8. 新しいトークンペア\n(Access + Refresh)" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="495" y="470" as="sourcePoint"/>
+<mxPoint x="205" y="470" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="retryApi4" value="9. API再試行\n(新しいJWT)" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="510" as="sourcePoint"/>
+<mxPoint x="345" y="510" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="successRetry4" value="10. 200 OK\nデータ返却" style="endArrow=classic;strokeColor=#00cc00;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="345" y="540" as="sourcePoint"/>
+<mxPoint x="205" y="540" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="display4" value="11. データ表示" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="195" y="570" as="sourcePoint"/>
+<mxPoint x="70" y="570" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+</root>
+</mxGraphModel>
+</diagram>
+
+<diagram name="5. Invalid JWT">
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+<mxCell id="title5" value="JWT不正時 - エラーハンドリング" style="text;html=1;strokeColor=none;fillColor=#ffcdd2;align=center;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="250" y="20" width="500" height="30" as="geometry"/>
+</mxCell>
+
+<mxCell id="user5" value="👤 User" style="shape=umlActor;verticalLabelPosition=bottom;" vertex="1" parent="1">
+<mxGeometry x="50" y="70" width="30" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="react5" value="📱 React App" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="150" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="api5" value="🌐 API Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="300" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="auth5" value="🖥️ Auth Server" style="rounded=1;whiteSpace=wrap;" vertex="1" parent="1">
+<mxGeometry x="450" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="logger5" value="🛡️ Security\nLogger" style="rounded=1;whiteSpace=wrap;fillColor=#ff9999;" vertex="1" parent="1">
+<mxGeometry x="600" y="70" width="100" height="60" as="geometry"/>
+</mxCell>
+
+<mxCell id="userLine5" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="65" y="150" as="sourcePoint"/>
+<mxPoint x="65" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="reactLine5" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="200" y="150" as="sourcePoint"/>
+<mxPoint x="200" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="apiLine5" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="350" y="150" as="sourcePoint"/>
+<mxPoint x="350" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="authLine5" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="500" y="150" as="sourcePoint"/>
+<mxPoint x="500" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="logLine5" style="endArrow=none;dashed=1;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="650" y="150" as="sourcePoint"/>
+<mxPoint x="650" y="580" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="request5" value="1. データ要求" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="70" y="180" as="sourcePoint"/>
+<mxPoint x="195" y="180" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="maliciousCall5" value="2. GET /api/data\n(不正JWT)" style="endArrow=classic;strokeColor=#d32f2f;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="210" as="sourcePoint"/>
+<mxPoint x="345" y="210" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="verify5" value="3. JWT署名検証\n(失敗)" style="rounded=1;whiteSpace=wrap;fillColor=#ffeb3b;" vertex="1" parent="1">
+<mxGeometry x="300" y="240" width="100" height="50" as="geometry"/>
+</mxCell>
+
+<mxCell id="logThreat5" value="4. セキュリティ脅威ログ記録\n(不正アクセス試行)" style="endArrow=classic;strokeColor=#d32f2f;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="355" y="310" as="sourcePoint"/>
+<mxPoint x="645" y="310" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="invalidError5" value="5. 401 Unauthorized\n(不正JWT)" style="endArrow=classic;strokeColor=#d32f2f;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="345" y="350" as="sourcePoint"/>
+<mxPoint x="205" y="350" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="refreshFail5" value="6. POST /api/auth/refresh\n(不正リフレッシュトークン)" style="endArrow=classic;strokeColor=#d32f2f;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="205" y="390" as="sourcePoint"/>
+<mxPoint x="495" y="390" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="refreshError5" value="7. 401 Unauthorized\n(無効リフレッシュトークン)" style="endArrow=classic;strokeColor=#d32f2f;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="495" y="430" as="sourcePoint"/>
+<mxPoint x="205" y="430" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+<mxCell id="logout5" value="8. 強制ログアウト\n全トークンクリア" style="rounded=1;whiteSpace=wrap;fillColor=#ffcdd2;" vertex="1" parent="1">
+<mxGeometry x="150" y="460" width="100" height="50" as="geometry"/>
+</mxCell>
+
+<mxCell id="loginRedirect5" value="9. ログイン画面へ\nリダイレクト" style="endArrow=classic;strokeWidth=2;" edge="1" parent="1">
+<mxGeometry relative="1" as="geometry">
+<mxPoint x="195" y="540" as="sourcePoint"/>
+<mxPoint x="70" y="540" as="targetPoint"/>
+</mxGeometry>
+</mxCell>
+
+</root>
+</mxGraphModel>
+</diagram>
+
 </mxfile>
